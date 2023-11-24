@@ -1,0 +1,324 @@
+/*
+	StyleSheet For Responsive Bootstrap Carousel 4
+	Author: szthemes
+	Item Name: Responsive Bootstrap Carousel 4
+	Author URI: http://codecanyon.net/user/szthemes
+	Description: Different Types of Bootstrap Carousel 4
+
+  -----------------------------------------------------------------------------------
+							Fonts Styles
+  -----------------------------------------------------------------------------------
+	  'Open Sans', sans-serif -------------------------------- 01
+	            FontAwesome ---------------------------------- 02
+  -----------------------------------------------------------------------------------
+							Color Codes
+  -----------------------------------------------------------------------------------
+	NAME    ------------------------RGB-------------------------- #
+	#ffffff -------------------rgb(255, 255, 255)---------------- 01
+	#888888 -------------------rgb(136, 136, 136)---------------- 02
+	#feb600 -------------------rgb(254, 182, 0)------------------ 03	Replace Only This Color To Change Whole Color Scheme
+	#fee299 -------------------rgb(254, 226, 153)---------------- 04	Replace Only This Color To Change Whole Color Scheme
+*/
+
+/*------------------------------------------------------*/
+/* TESTIMONIAL SPEECH BUBBLE CAROUSEL
+/*------------------------------------------------------*/
+.testimonial_spch_babl_carousel_wrapper{
+	padding-bottom: 30px;
+	overflow: hidden;
+}
+.testimonial_spch_babl_carousel_wrapper > h1{
+	font-weight: 800;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Open Sans', sans-serif;
+}
+.testimonial_spch_babl_carousel_wrapper > hr{
+	width: 10%;
+}
+.testimonial_spch_babl_carousel_wrapper .carousel-item > .row{
+  margin: 0;
+}
+/*---------- LEFT/RIGHT CONTROL ----------*/
+.testimonial_spch_babl_carousel_control_left,
+.testimonial_spch_babl_carousel_control_right{
+  top: 100px;
+  z-index: 2;
+  opacity: 1;
+  width: 35px;
+  height: 35px;
+  text-shadow: none;
+  text-align: center;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+.testimonial_spch_babl_carousel_control_icons{
+  line-height: 35px;
+  font-size: 20px !important;
+  font-weight: normal !important;
+}
+.testimonial_spch_babl_carousel_control_left{
+  left: 60px !important;
+}
+.testimonial_spch_babl_carousel_control_right{
+   left: 98px !important;
+}
+/*---------- MEDIA QURIES ----------*/
+@media only screen and (max-width: 550px){
+  .testimonial_spch_babl_carousel_control_left,
+  .testimonial_spch_babl_carousel_control_right{
+    top: 150px;
+  }
+}
+/*---------- INDICATORS ----------*/
+.testimonial_spch_babl_carousel_indicators{
+  margin: 0;
+  bottom: 0;
+  padding: 0;
+  display: block;
+  text-align: center;
+}
+.testimonial_spch_babl_carousel_indicators li{
+  width: 15px;
+  margin: 1px;
+  height: 15px;
+  display: inline-block;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+}
+.testimonial_spch_babl_carousel_indicators .active{
+  width: 15px;
+  margin: 1px;
+  height: 15px;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+}
+/*---------- CAPTION ----------*/
+.testimonial_spch_babl_carousel_text>p{
+	padding: 15px;
+	margin: 1em 0 2em;
+	position: relative;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+}
+.testimonial_spch_babl_carousel_text>p:after{
+	left: 33px;
+	content: "";
+	bottom: -11px;
+	display: block;
+	position: absolute;
+	border-style: solid;
+	border-width: 20px 20px 0 0;
+}
+.testimonial_spch_babl_carousel_text>p>i{
+	margin-right: 5px;
+}
+.testimonial_spch_babl_carousel_image img{
+	width: 90px;
+	display: block;
+	min-width: 35px;
+	-webkit-filter: grayscale(70%);
+	   -moz-filter: grayscale(70%);
+		-ms-filter: grayscale(70%);
+		 -o-filter: grayscale(70%);
+			filter: grayscale(70%);
+	-webkit-transition: all 0.3s ease 0s;
+	   -moz-transition: all 0.3s ease 0s;
+		-ms-transition: all 0.3s ease 0s;
+		 -o-transition: all 0.3s ease 0s;
+            transition: all 0.3s ease 0s;
+}
+.testimonial_spch_babl_carousel_caption:hover .testimonial_spch_babl_carousel_image img{
+	-webkit-filter: grayscale(0%);
+	   -moz-filter: grayscale(0%);
+		-ms-filter: grayscale(0%);
+		 -o-filter: grayscale(0%);
+			filter: grayscale(0%);
+}
+.testimonial_spch_babl_carousel_author{
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.testimonial_spch_babl_carousel_author>h5{
+	font-weight: 600;
+	margin: 5px 0px 5px 0px;
+	text-transform: capitalize;
+	font-family: 'Open Sans', sans-serif;
+}
+.testimonial_spch_babl_carousel_author>a,
+.testimonial_spch_babl_carousel_author>a:visited{
+	display: block;
+	font-size: 11px;
+	letter-spacing: 1px;
+	text-decoration: none;
+	margin: 0px 0px 5px 0px;
+	text-transform: capitalize;
+	font-family: 'Raleway', sans-serif;
+	-webkit-transition: color 0.3s ease 0s;
+            transition: color 0.3s ease 0s;
+}
+.testimonial_spch_babl_rating{
+	padding: 0px;
+	list-style-type: none;
+	margin: 5px 0px 5px 0px;
+}
+.testimonial_spch_babl_rating li{
+	display: inline;
+}
+
+/*------------------------------------------------------*/
+/* COLORS (GOLDEN)
+/*------------------------------------------------------*/
+
+.testimonial_spch_babl_carousel_wrapper{
+	background: #f8f9fa;
+}
+.testimonial_spch_babl_carousel_wrapper > hr{
+	border: 1px solid #feb600;
+}
+/*---------- LEFT/RIGHT CONTROL ----------*/
+.testimonial_spch_babl_carousel_control_left,
+.testimonial_spch_babl_carousel_control_left:hover,
+.testimonial_spch_babl_carousel_control_left:active,
+.testimonial_spch_babl_carousel_control_left:focus,
+.testimonial_spch_babl_carousel_control_right,
+.testimonial_spch_babl_carousel_control_right:hover,
+.testimonial_spch_babl_carousel_control_right:active,
+.testimonial_spch_babl_carousel_control_right:focus{
+  color: #171717;
+  background: #feb600 !important;
+}
+/*---------- INDICATORS ----------*/
+.testimonial_spch_babl_carousel_indicators li{
+	background: #fee299;
+}
+.testimonial_spch_babl_carousel_indicators .active{
+	background: #feb600;
+}
+/*---------- CAPTION ----------*/
+.testimonial_spch_babl_carousel_text>p{
+	color: #fff;
+	background: #2a3855;
+	padding: 22px;
+	font-size: 14px !important;
+}
+.testimonial_spch_babl_carousel_text>p:after{
+	border-color: #feb600 transparent;
+}
+.testimonial_spch_babl_carousel_author>h5{
+	color: #1a1c27;
+	font-size: 18px;
+}
+.testimonial_spch_babl_carousel_author>a,
+.testimonial_spch_babl_carousel_author>a:visited{
+	color: #1a1c27;
+}
+.testimonial_spch_babl_carousel_author>a:hover,
+.testimonial_spch_babl_carousel_author>a:active{
+	color: #feb600;
+}
+.testimonial_spch_babl_rating li i{
+	color: #feb600;
+}
+/*------------------------------------------------------*/
+/* SLIDING TIMING FUNCTIONS
+/*------------------------------------------------------*/
+/*---------- ps_ease ----------*/
+.ps_ease .carousel-item{
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+/*---------- ps_easeInOut ----------*/
+.ps_easeInOut .carousel-item{
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+/*---------- ps_speedy ----------*/
+.ps_speedy .carousel-item{
+  -webkit-transition-timing-function: cubic-bezier(0,1,0,1);
+  transition-timing-function: cubic-bezier(0,1,0,1);
+}
+/*---------- ps_slowSpeedy ----------*/
+.ps_slowSpeedy .carousel-item{
+  -webkit-transition-timing-function: cubic-bezier(0.3,1,0,1);
+  transition-timing-function: cubic-bezier(0.3,1,0,1);
+}
+/*---------- ps_easeOutInCubic ----------*/
+.ps_easeOutInCubic .carousel-item{
+  -webkit-transition-timing-function: cubic-bezier(0.22,0.81,0.01,0.99);
+  transition-timing-function: cubic-bezier(0.22,0.81,0.01,0.99);
+}
+/*---------- ps_swing ----------*/
+.ps_swing .carousel-item{
+  -webkit-transition-timing-function: cubic-bezier(.02,.01,.47,1);
+  transition-timing-function: cubic-bezier(.02,.01,.47,1);
+}
+/*---------- ps_easeOutCubic ----------*/
+.ps_easeOutCubic .carousel-item{
+  -webkit-transition-timing-function: cubic-bezier(.215,.61,.355,1);
+  transition-timing-function: cubic-bezier(.215,.61,.355,1);
+}
+/*---------- ps_easeInOutCubic ----------*/
+.ps_easeInOutCubic .carousel-item{
+  -webkit-transition-timing-function: cubic-bezier(.645,.045,.355,1);
+  transition-timing-function: cubic-bezier(.645,.045,.355,1);
+}
+/*---------- ps_easeOutCirc ----------*/
+.ps_easeOutCirc .carousel-item{
+  -webkit-transition-timing-function: cubic-bezier(.075,.82,.165,1);
+  transition-timing-function: cubic-bezier(.075,.82,.165,1);
+}
+/*---------- ps_easeOutExpo ----------*/
+.ps_easeOutExpo .carousel-item{
+  -webkit-transition-timing-function: cubic-bezier(.19,1,.22,1);
+  transition-timing-function: cubic-bezier(.19,1,.22,1);
+}
+/*---------- ps_easeInQuad ----------*/
+.ps_easeInQuad .carousel-item{
+  -webkit-transition-timing-function: cubic-bezier(.55,.085,.68,.53);
+  transition-timing-function: cubic-bezier(.55,.085,.68,.53);
+}
+/*---------- ps_easeOutQuad ----------*/
+.ps_easeOutQuad .carousel-item{
+  -webkit-transition-timing-function: cubic-bezier(.25,.46,.45,.94);
+  transition-timing-function: cubic-bezier(.25,.46,.45,.94);
+}
+/*---------- ps_easeInOutQuad ----------*/
+.ps_easeInOutQuad .carousel-item{
+  -webkit-transition-timing-function: cubic-bezier(.455,.03,.515,.955);
+  transition-timing-function: cubic-bezier(.455,.03,.515,.955);
+}
+/*---------- ps_easeOutQuart ----------*/
+.ps_easeOutQuart .carousel-item{
+  -webkit-transition-timing-function: cubic-bezier(.165,.84,.44,1);
+  transition-timing-function: cubic-bezier(.165,.84,.44,1);
+}
+/*---------- ps_easeInOutQuart ----------*/
+.ps_easeInOutQuart .carousel-item{
+  -webkit-transition-timing-function: cubic-bezier(.77,0,.175,1);
+  transition-timing-function: cubic-bezier(.77,0,.175,1);
+}
+/*---------- ps_easeOutQuint ----------*/
+.ps_easeOutQuint .carousel-item{
+  -webkit-transition-timing-function: cubic-bezier(.23,1,.32,1);
+  transition-timing-function: cubic-bezier(.23,1,.32,1);
+}
+/*---------- ps_easeInSine ----------*/
+.ps_easeInSine .carousel-item{
+  -webkit-transition-timing-function: cubic-bezier(.47,0,.745,.715);
+  transition-timing-function: cubic-bezier(.47,0,.745,.715);
+}
+/*---------- ps_easeOutSine ----------*/
+.ps_easeOutSine .carousel-item{
+  -webkit-transition-timing-function: cubic-bezier(.39,.575,.565,1);
+  transition-timing-function: cubic-bezier(.39,.575,.565,1);
+}
+/*---------- ps_easeInOutSine ----------*/
+.ps_easeInOutSine .carousel-item{
+  -webkit-transition-timing-function: cubic-bezier(.445,.05,.55,.95);
+  transition-timing-function: cubic-bezier(.445,.05,.55,.95);
+}
+/*---------- END ----------*/

@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+font-family: myFont;
+src: url(../Website4Venture/glacial-indifference/GlacialIndifference-Regular.otf)
+}
+body{
+font-family: myFont;
+}
+a {
+  text-decoration: none;
+}
+/* About Us styles */
+.aboutus__section {
+  position: relative;
+  padding: 0 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.aboutus__section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://img.freepik.com/premium-vector/sky-background-video-conferencing_23-2148616500.jpg?size=626&ext=jpg') no-repeat center center;
+  background-size: cover;
+  opacity: 0.9;
+  z-index: -1;
+}
+
+.aboutus__section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(5, 136, 172, 0.4);
+  /* Purple overlay color with opacity */
+  z-index: -1;
+}
+
+.aboutus__section__text {
+  margin: 12.5rem 0;
+  padding: 0 2.5rem;
+  width: 50%;
+  position: relative;
+  z-index: 1;
+}
+
+.aboutus__section__text h1 {
+  color: white;
+  font-size: 4.5rem;
+  font-weight: 400;
+  line-height: 143px;
+}
+
+.aboutus__section__text p {
+  color: white;
+  font-size: 1.75rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+}
+
+.aboutus__section__img {
+  width: 50%;
+  height: 100%;
+}
+
+.aboutus__section__img img {
+  width: 100%;
+  height: 100%;
+  margin: 6.25rem 2.5rem;
+}
+
+hr.aboutafter__line {
+  border: 0.188rem solid rgb(116, 197, 218);
+  width: 12.5rem;
+  margin-top: 1.875rem;
+}hr.center__after__line {
+    border: 3px solid rgb(116, 197, 218);
+    width: 6.25rem;
+    margin: 1.875rem auto;
+    text-align: center;
+  }
+/* //////////////////////////////////////////////////////////////// */
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .aboutus__section {
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+
+  .aboutus__section__text {
+    width: 100%;
+    margin: 3rem 0;
+  }
+
+  .aboutus__section__img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .aboutus__section__text h1 {
+    font-size: 3rem;
+    line-height: 100px;
+  }
+
+  .aboutus__section__text p {
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+  }
+
+  .aboutus__section::before,
+  .aboutus__section::after {
+    display: none; /* Hide the background overlay on small screens */
+  }
+}
+/********************************************/
+.service__section{
+  margin: 5em 0;
+  padding:0 5em ;
+  display: flex;
+  justify-content: center; /* Center the items horizontally */
+  align-items: center; /* Center the items vertically */
+  gap: 4rem;
+}
+.services__text{
+width: 50%;
+}
+.services__headertext h2{
+font-size: 2.5rem;
+font-weight: 400;
+text-transform: uppercase;
+padding-top: 2rem;
+}
+hr.after__line{
+border:2px solid rgb(116,197,218);
+width: 100px;
+margin-top: 30px;
+}
+.services__headertext p{
+font-size: 1rem;
+line-height: 30px;
+font-weight: 400;
+padding: 1.5rem 0px;
+color:rgb(118,136,148);
+}
+.services__footertext{
+display: flex;
+gap: 2.5rem;
+}
+.intro__card{
+width: 100%;
+}
+.intro__card__title{
+display: flex;
+align-items: center;
+cursor: pointer;
+}
+.intro__card__icon{
+background-color: rgb(116,197,218);
+width: 3rem;
+height: 3rem;
+border-radius: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+margin-right: 20px;
+}
+.intro__card__icon:hover{
+animation: pulse 1.5s;
+background-color: rgb(45, 114, 164);
+box-shadow: 0 0 0 20px rgba(116, 197, 218, 0);
+}
+.intro__card__icon i{
+color: #fff;
+font-size: 1.25rem;
+align-items: center;
+justify-content: center;
+}
+.icon__title h1{ 
+font-size: 1rem;
+line-height: 30px;
+font-weight: 600;
+}
+.icon__title h1:hover{
+color:  rgb(45, 114, 164);
+}
+.desc p{
+padding: 1rem 0;
+font-size: 0.95rem;
+line-height: 30px;
+font-weight: 400;
+color:rgb(118,136,148);
+text-align: justify;
+}
+/********************************************************/
+.service__section_pic {
+width: 50%;
+height: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.service__section_pic img {
+width: 100%;
+height: 100%;
+object-fit: cover; /* Fit the image inside the .service__section_pic div */
+}
+/* For screens with a maximum width of 768px (tablets and smaller) */
+@media (max-width: 768px) {
+.service__section {
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.services__text,
+.intro__card,
+.service__section_pic {
+    width: 100%;
+}
+
+.service__section_pic {
+    height: auto;
+}
+}
+/* For screens with a maximum width of 480px (smartphones and smaller) */
+@media (max-width: 480px) {
+.services__headertext h2 {
+    font-size: 2rem;
+    line-height: 100px;
+}
+
+.services__headertext p {
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+}
+
+/* Hide the background overlay on small screens */
+.aboutus__section::before,
+.aboutus__section::after {
+    display: none;
+}
+}

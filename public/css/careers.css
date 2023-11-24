@@ -1,0 +1,258 @@
+@font-face {
+    font-family: myFont;
+    src: url(../Website4Venture/glacial-indifference/GlacialIndifference-Regular.otf)
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: myFont;
+}
+
+/* .......................................................... */
+/* .......................................................... */
+.careers__section {
+    position: relative;
+    height: 60vh;
+}
+
+.careers__section img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* .careers__section::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 60vh;
+    /* background: url(https://img.freepik.com/free-photo/overworked-paralyzed-disabled-entrepreneur-man-wheelchair-sitting-desk-overworking-company_482257-7507.jpg?size=626&ext=jpg); */
+/* background: url(https://t4.ftcdn.net/jpg/03/15/33/09/240_F_315330940_mzSWyqDgOM3cyaat87jjpp2qSTiFyeib.jpg);
+    background-size: cover;
+    opacity: 0.85;
+    z-index: -1;   
+} */
+*/ .careers__section__text {
+    width: 50%;
+    padding: 11rem 1.25rem;
+    color: white;
+    z-index: 10;
+    opacity: 1;
+}
+
+.careers__section__text h1 {
+    font-size: 3rem;
+}
+
+.careers__section__text p {
+    padding: 1.875rem 0px;
+    font-size: 1.375rem;
+    line-height: 1.875rem;
+    font-weight: lighter;
+    color: white;
+    display: flex;
+}
+
+hr.center__after__line {
+    border: 3px solid rgb(116, 197, 218);
+    width: 6.25rem;
+    margin: 1.875rem auto;
+    text-align: center;
+}
+
+/* media query main careers */
+
+@media screen and (max-width: 580px) {
+    .careers__section {
+        height: auto;
+    }
+
+    .careers__section__text {
+        padding: 5rem 1.5rem;
+        width: 100%;
+    }
+
+    .careers__section__text h1 {
+        font-size: 3.4rem;
+        width: 31.35rem;
+    }
+}
+
+/* .......................careers content................................... */
+.joinus {
+    width: 100%;
+    background-color: rgb(253, 252, 252);
+    padding: 3.75rem 2rem;
+
+}
+
+.joinus__content {
+    width: 95%;
+    /* margin: 2rem auto; */
+}
+
+.columns {
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+}
+
+.work__with__us {
+    padding: 3.75rem 0;
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.work__with__us h3 {
+    font-size: 1rem;
+    color: rgb(125, 197, 241)
+}
+
+.work__with__us h1 {
+    font-size: 2.25rem;
+    padding: 0.95rem 0;
+}
+
+.work__with__us p {
+    font-size: 1rem;
+    line-height: 25px;
+}
+
+.work__withus__cards {
+    min-height: 200px;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__img {
+    width: 48%;
+}
+
+.card__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.choose__us {
+    width: 48%;
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.choose__us__col {
+    background-color: white;
+    height: auto;
+    height: auto;
+    border-radius: 10px;
+    padding: 0 1.25rem;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.choose__us__col i {
+    font-size: 3rem;
+    color: rgb(56, 149, 206);
+    padding: 1rem 0;
+}
+
+.choose__us__col h1 {
+    font-size: 1.25rem;
+    padding-bottom: 1rem;
+}
+
+.choose__us__col p {
+    font-size: 1rem;
+    padding-bottom: 1rem;
+}
+
+/***********media query*******/
+@media screen and (max-width: 720px) {
+    .columns {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .work__with__us,
+    .choose__us {
+        width: 100%;
+    }
+
+    .choose__us__col {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
+
+/* ......................job opeaning.................................... */
+.job__opeaning {
+    background-color: rgb(249, 245, 245);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.job__opeaning h1{
+    color: rgb(56,149,206);
+    font-size: 2rem;
+    padding: 1rem;
+}
+.job__opeaning h4{
+    font-size: 0.85rem;
+}
+.jobs__card{
+    width: 90%;
+    margin: 3.75rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: auto;
+}
+.jobs__col{
+    height: 80px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: rgb(252, 249, 249);
+}
+.job__col__content{
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+    width: 30%;
+}
+.job__col__content h3{
+    font-size: 1.5rem;
+    padding-bottom: 0.5rem;
+}
+.job__col__content h4{
+    font-size: 1.25rem;
+    color: rgb(56,149,206);;
+}
+.job__col__content h5{
+    font-size: 1rem;
+}
+.job__col__btn button{
+    margin: 0 auto;
+    padding: 0.75rem 2rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(56,149,206);
+    border-radius: 4px;
+    color: white;
+    font-size: 1rem;
+}
+.job__col__btn button:hover{
+    background-color:rgb(4, 113, 181) ;
+}

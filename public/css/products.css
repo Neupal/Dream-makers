@@ -1,0 +1,182 @@
+@font-face {
+    font-family: myFont;
+    src: url(../Website4Venture/glacial-indifference/GlacialIndifference-Regular.otf)
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: myFont;
+}
+
+/* .......................................................... */
+.product__section {
+    position: relative;
+    height: auto;
+}
+
+.product__section::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(https://img.freepik.com/premium-photo/top-view-laptop-concept-with-blue-desk-concept-background-3d-rendering_626958-393.jpg?size=626&ext=jpg);
+    background-size: cover;
+    opacity: 0.7;
+    z-index: -1;
+    background-color: #13054e;
+    opacity: 0.5;
+    filter: hue-rotate(340deg);
+}
+
+.product__section__text {
+    width: 50%;
+    padding: 12rem 1.25rem;
+    color: white;
+    opacity: 1;
+    z-index: 10;
+}
+
+.product__section__text h1 {
+    font-size: 3rem;
+}
+
+.product__section__text p {
+    padding: 1.875rem 0px;
+    font-size: 1.375rem;
+    line-height: 1.875rem;
+    font-weight: lighter;
+    color: white;
+}
+
+hr.center__after__line {
+    border: 3px solid rgb(116, 197, 218);
+    width: 6.25rem;
+    margin: 1.875rem auto;
+    text-align: center;
+}
+
+/* media query main product */
+
+@media screen and (max-width: 580px) {
+    .product__section {
+        height: auto;
+    }
+
+    .product__section__text {
+        padding: 5rem 1.5rem;
+        width: 100%;
+    }
+
+    .product__section__text h1 {
+        font-size: 3.4rem;
+        width: 31.35rem;
+    }
+}
+
+/**********************************************************/
+.product__content {
+    width: 95%;
+    margin: 0 auto;
+    /* background-color: aqua; */
+}
+
+.columns {
+    display: flex;
+    justify-content: space-between;
+    min-height: 400px;
+    max-height: 500px;
+    margin: 3rem 0 5rem 0;
+}
+
+.col {
+    width: 48%;
+}
+
+.col-img {
+    width: 48%;
+}
+.col-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.col h2 {
+    font-size: 2rem;
+    color: rgb(64, 155, 212);
+    padding: 1rem 0;
+
+}
+
+.col p {
+    font-size: 1rem;
+    color: rgb(53, 53, 53);
+    text-align: justify;
+    padding: 1rem 0;
+}
+.col-break {
+    height: 2px;
+    background-color: rgb(125, 197, 241);
+}
+@media screen and (max-width: 720px) {
+    .columns {
+        height: auto;
+      flex-direction: column;
+    }
+  .col, .col-img{
+    width: 100%;   
+  }
+.col{
+    margin-bottom: 2rem;
+}
+    .col h2{
+        font-size: 1.75rem;
+        padding-bottom: 0;
+    }
+    .col p{
+        font-size: 1rem;
+    }
+}
+/*************************************/
+  /* ------------stay connected---------------------------------- */
+  .signup__section{
+    padding: 3.125rem 1.875rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  .signup__text{
+    padding: 0px 0.625rem; 
+    color: rgb(64, 155, 212);
+    font-size: 1.375;
+    font-weight: 100;
+  }
+  .signup__text p{
+    color: rgb(64, 155, 212);
+    line-height: 1.25rem;
+    padding-top: 6px;
+  }
+  .signup__button button{
+    margin-right: 1.875rem;
+    padding: 0.625rem 1.875rem;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(107, 183, 230);
+    color: #fff;
+    font-weight: 600;
+  }
+  .signup__button button:hover{
+    background-color: #5a99d4;
+  }
+  @media (max-width: 768px) {
+    .signup__section{
+      display: flex;flex-direction: column;
+    }
+    .signup__text{
+      margin-bottom: 20px;
+    }
+  }

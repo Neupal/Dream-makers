@@ -1,0 +1,461 @@
+@font-face {
+    font-family: myFont;
+    src: url(../glacial-indifference/GlacialIndifference-Regular.otf);
+  }
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  html, body {
+    height: 100%;
+  }
+  body{
+    font-family: myFont;
+  }
+  
+  body{
+    font-family: myFont;
+    line-height: 1;
+ 
+  }
+
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/**************************************************************************/
+/* About Us styles */
+.aboutus__section {
+  position: relative;
+  padding: 0 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.aboutus__section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://img.freepik.com/premium-vector/sky-background-video-conferencing_23-2148616500.jpg?size=626&ext=jpg') no-repeat center center;
+  background-size: cover;
+  opacity: 0.9;
+  z-index: -1;
+}
+
+.aboutus__section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(5, 136, 172, 0.4);
+  /* Purple overlay color with opacity */
+  z-index: -1;
+}
+
+.aboutus__section__text {
+  margin: 12.5rem 0;
+  padding: 0 2.5rem;
+  width: 50%;
+  position: relative;
+  z-index: 1;
+}
+
+.aboutus__section__text h1 {
+  color: white;
+  font-size: 4.5rem;
+  font-weight: 400;
+  line-height: 143px;
+}
+
+.aboutus__section__text p {
+  color: white;
+  font-size: 1.75rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+}
+
+.aboutus__section__img {
+  width: 50%;
+  height: 100%;
+}
+
+.aboutus__section__img img {
+  width: 100%;
+  height: 100%;
+  margin: 6.25rem 2.5rem;
+}
+
+hr.aboutafter__line {
+  border: 0.188rem solid rgb(116, 197, 218);
+  width: 12.5rem;
+  margin-top: 1.875rem;
+}hr.center__after__line {
+    border: 3px solid rgb(116, 197, 218);
+    width: 6.25rem;
+    margin: 1.875rem auto;
+    text-align: center;
+  }
+/* //////////////////////////////////////////////////////////////// */
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .aboutus__section {
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+
+  .aboutus__section__text {
+    width: 100%;
+    margin: 3rem 0;
+  }
+
+  .aboutus__section__img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .aboutus__section__text h1 {
+    font-size: 3rem;
+    line-height: 100px;
+  }
+
+  .aboutus__section__text p {
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+  }
+
+  .aboutus__section::before,
+  .aboutus__section::after {
+    display: none; /* Hide the background overlay on small screens */
+  }
+}
+/****************who we are************************************/
+
+.who__section {
+    padding: 100px 0px 60px 0px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.who__section__header h2 {
+    font-size: 42px;
+    line-height: 1.5;
+    font-weight: 400;
+    margin: 0;
+}
+
+.who__section__header p {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    text-align: justify;
+    margin: 20px 0;
+    padding: 0px 60px ;
+}
+
+.who__after__line {
+    border: 3px solid rgb(116, 197, 218);
+    width: 100px;
+    margin: 30px auto;
+}
+
+.who__section__statistics {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 60px;
+}
+
+.stats-card {
+    background-color: #fefcfc;
+    border-radius: 6px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgb(77, 126, 255, 0.3);
+    width: 22%;
+    margin-bottom: 20px;
+}
+
+.stats-card h1 {
+    font-size: 50px;
+    color: rgb(116, 197, 218);
+    margin: 30px 0;
+}
+
+.stats-card h3 {
+    color: #615656;
+    margin: 10px 0;
+}
+
+/* Media Queries for Responsive Layout */
+@media (max-width: 768px) {
+    .who__section__statistics {
+        flex-direction: column;
+        align-items: center;
+    }
+    .stats-card {
+        width: 90%;
+    }
+}
+/****************what we does ************************************/
+.services-content{
+  margin-top: 60px;
+}
+.services-row{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0px 80px;
+  gap:40px;
+  padding-bottom: 80px;
+}
+.services-column{
+  align-items: center; 
+  margin-bottom: 10px;
+}
+.services-icon{
+  color: rgb(116,197,218);
+  font-size: 50px;
+  margin-right: 20px;
+  padding-bottom: 20px;
+}
+.services-text h3{
+  font-size: 21px;
+  padding: 0px 0px;
+  padding-bottom: 20px;
+  
+}
+.services-text p{
+  font-size: 17px;
+  color:#686969;
+  font-weight: 100;
+  line-height: 30px;
+  text-align: justify;
+}
+/******************our teams**********************************/
+.our__teams {
+    padding: 100px 30px;
+    background-color: rgb(245,246,246);
+}
+
+.our__teams__header {
+    text-align: center;
+    padding: 0px 200px;
+}
+
+.our__teams__header h2 {
+    font-size: 48px;
+    line-height: 65px;
+    font-weight: 400;
+}
+
+hr.our__teams__after__line {
+    border: 3px solid rgb(116, 197, 218);
+    width: 100px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.our__teams__header p {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+    color: rgb(118, 136, 148);
+}
+/* ------------our clients---------------------------------- */
+.clients__section{
+    padding: 5rem 1.875rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .clients__header{
+    text-align: center;
+   
+  }
+  .clients__header h2{
+    font-size: 42px;
+    line-height: 1.5;
+    font-weight: 400;
+    margin: 0;
+  }
+  .clients__body{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 1.875rem;
+    justify-content: center;
+    margin-top: 3.125rem;
+  }
+  .clients{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 200px;
+  }
+  .clients img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  /* ------------clients media query---------------------------------- */
+  @media screen and (min-width: 992px) {
+    .clients__header {
+      padding: 0px 3.125rem;
+      text-align: center;
+    }
+    
+    .clients__body {
+        grid-template-columns: repeat(5, 1fr);
+    }
+  
+  }
+  @media screen and (max-width: 480px) {
+    .clients__header {
+     padding: 0px;
+     text-align: center;
+    }
+  }
+/**************our teams card gallery**************************************/
+.our__teams__body{
+    margin-top: 50px;
+    display: block;
+}
+.our__teams__row{
+    height: 50%;
+   display: flex;
+   gap: 40px;
+   margin-bottom: 40px;
+}
+.our__teams__card{
+    background-color: #fff;
+    width: 33.33%; 
+    min-height: 400px;
+}
+.our__teams__card__head{
+    height: 50%;
+    object-fit: contain;
+    box-sizing: border-box;
+}
+.our__teams__card__head img{
+    width: 100%;
+    height: 100%;
+}
+.our__teams__card__body{
+    height: 50%;
+    text-align: center;
+    padding: 40px ;
+}
+.our__teams__card__body h1,h2{
+    font-size: 20px;
+    line-height: 42px;
+    font-weight: 600;
+}
+.our__teams__card__body h2{
+    padding-bottom: 20px;
+}
+.our__teams__card__body i{
+    color: rgb(201, 202, 204);
+    padding: 40px 0px;
+    margin-right: 16px;
+    font-size: 18px;
+}.works-pic-gallery{
+  height:800px;
+  margin: 100px 120px;
+  display:flex;
+}
+.pic-div{
+  flex:1;
+}
+
+.pic-div-a{
+  height: 55%;
+  position: relative;background-color: #24BEB5;
+}
+.pic-div-b{
+  height:45%;
+  position: relative;background-color: yellowgreen;
+}
+.gallery-image{
+  position: absolute;
+  top: 0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.gallery-image img{
+  width: 100%;
+  height: 100%;
+}
+/****************get started********************************************/
+.get__started {
+    background-color: rgb(64, 155, 212);
+    display: flex;
+    padding: 60px 30px;
+}
+
+.get__started__text {
+    width: 50%;
+    display: flex;
+}
+
+.get__started__line {
+    border: 4px solid rgb(116, 197, 218);
+    width: 4px;
+    height: 100%;
+    margin-right: 30px;
+}
+
+.getstarted__header {
+    width: 100%;
+    display: block;
+    padding: 30px;
+}
+
+.getstarted__header h2,
+.getstarted__header h3 {
+    font-size: 80px;
+    line-height: 124px;
+    font-weight: 400;
+    color: #fff;
+    margin: 0;
+}
+
+.getstarted__header h3 {
+    font-size: 40px;
+    line-height: 65px;
+}
+
+.get__started__content {
+    margin: 80px 180px;
+}
+
+.get__started__content button {
+    background-color: #ffffff;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 900;
+    padding: 20px 50px;
+    width: auto;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    margin: 30px 0;
+}
+
+.get__started__content button:hover {
+    background-color: rgb(110,71,233);
+    color: #fff;
+}

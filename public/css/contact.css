@@ -1,0 +1,401 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgb(64,155,212);
+  }
+}
+
+/* Contact Us styles */
+.contactus__section {
+    position: relative;
+    padding: 0 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+  
+  .contactus__section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://img.freepik.com/premium-vector/sky-background-video-conferencing_23-2148616500.jpg?size=626&ext=jpg') no-repeat center center;
+    background-size: cover;
+    opacity: 0.9;
+    z-index: -1;
+  }
+  
+  .contactus__section::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(5, 136, 172, 0.4);
+    /* Purple overlay color with opacity */
+    z-index: -1;
+  }
+  
+  .contactus__section__text {
+    margin: 10rem auto;
+    padding: 0 2rem;
+    width: 50%;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .contactus__section__text h1 {
+    color: white;
+    font-size: 4.5rem;
+    font-weight: 400;
+    line-height: 143px;
+  }
+  
+  .contactus__section__text p {
+    color: white;
+    font-size: 1.75rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+  }
+  
+  .contactus__section__img {
+    width: 50%;
+    height: 80%;
+  }
+  
+  .contactus__section__img img {
+    width: 100%;
+    height: 100%;
+    margin: 20px auto;
+  }
+  
+  hr.aboutafter__line {
+    border: 0.188rem solid rgb(116, 197, 218);
+    width: 12.5rem;
+    margin-top: 1.875rem;
+  }hr.center__after__line {
+      border: 3px solid rgb(116, 197, 218);
+      width: 6.25rem;
+      margin: 1.875rem auto;
+      text-align: center;
+    }
+  /* //////////////////////////////////////////////////////////////// */
+  /* Media Queries */
+  @media screen and (max-width: 768px) {
+    .contactus__section {
+      flex-direction: column;
+      padding: 0 1rem;
+    }
+  
+    .contactus__section__text {
+      width: 100%;
+      margin: 3rem 0;
+    }
+  
+    .contactus__section__img {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .contactus__section__text h1 {
+      font-size: 3rem;
+      line-height: 100px;
+    }
+  
+    .contactus__section__text p {
+      font-size: 1.3rem;
+      line-height: 1.8rem;
+    }
+  
+    .contactus__section::before,
+    .contactus__section::after {
+      display: none; /* Hide the background overlay on small screens */
+    }
+  }
+
+  /******************contact us form section **************************************/
+.contact__us {
+  background-color: #fff;
+  padding: 90px 50px;
+  display: flex;
+  justify-content: center;
+  /* Center the items horizontally */
+  align-items: center;
+  /* Center the items vertically */
+  gap: 50px;
+  height: auto;
+  
+}
+
+.contact__us__text {
+  width: 60%;
+}
+
+.contact__us__headertext h2 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+hr.after__line {
+  border: 2px solid rgb(116, 197, 218);
+  width: 100px;
+  margin-top: 30px;
+}
+
+.contact__us__headertext p {
+  font-size: 1.2rem;
+  line-height: 30px;
+  font-weight: 400;
+  padding: 40px 0px;
+  color: rgb(118, 136, 148);
+}
+
+.contact__form {
+  margin: 0px 30px;
+  height: 100%;
+}
+
+.form__row {
+  width: 100%;
+  display: flex;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+.form__field{
+  width: 50%;
+  height: 50px;  
+  background-color: rgb(245,246,246);
+}
+.form__field input{
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  background-color: rgb(245,246,246);
+  border: none;
+  outline: none;
+}
+.textareas{
+  padding: 20px;
+  background-color: rgb(245,246,246);
+  border: none;
+  width: 100%;
+  outline: none;
+}
+.contact__form button{
+  background-color: rgb(116, 197, 218);
+  color: #fff;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 900;
+  padding: 10px 30px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  margin-top: 30px;
+}
+.contact__form button:hover {
+  background-color: rgb(45, 114, 164);
+  color: #fff
+}
+.contact__us__pic {
+  width: 40%;
+  height: 500px;
+  margin-top: 100px;
+}
+
+.contact__us__pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+/***************contact icon section***********************************************/
+.contact__icon__section{
+  background-color: rgb(245,246,246);
+  padding: 100px 40px;
+  display: flex;
+  gap: 80px;
+}
+.contact__card{
+  width: 33.33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.card__circ__div{
+  width: 200px;
+  height: 200px;
+  background-color:rgb(254,255,254);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.card__circ__div:hover{
+  animation: pulse 1.5s;
+  /* background-color: rgb(99,57,188); */
+  box-shadow: 0 0 0 20px rgba(116, 197, 218, 0);
+}
+.icon{
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  border: 4px solid rgb(245,246,246);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon:hover{
+  border: 1px solid rgb(245,246,246);
+}
+.icon i{
+  font-size: 90px;
+  color: rgb(117,197,219);
+}
+.icon i:hover{
+  color: rgb(254,255,254);
+}
+.contact__card h1{
+  padding: 12px 0;
+  font-size: 30px;
+  line-height: 30px;
+  font-family: 'Teko', sans-serif;
+  font-weight: 400;
+}
+.contact__card p{
+  padding-bottom: 10px;
+  font-size: 16px;
+  line-height: 30px;
+}
+@media screen and (max-width: 768px) {
+  .contact__us {
+      padding: 50px 20px;
+      flex-direction: column;
+  }
+  
+  .contact__us__text {
+      width: 100%;
+  }
+
+  .contact__us__pic {
+      width: 100%;
+      height: auto;
+      margin-top: 50px;
+  }
+}
+
+/* Adjust styles for medium-sized screens */
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .contact__us {
+      padding: 80px 30px;
+  }
+  
+  .contact__us__text {
+      width: 70%;
+  }
+  
+  .contact__us__pic {
+      width: 30%;
+      height: auto;
+      margin-top: 80px;
+  }
+}
+/********contact icon section***********/
+/********contact icon section***********/
+.contact__icon__section {
+  background-color: rgb(245, 246, 246);
+  /* padding: 6rem 2.5rem; */
+  display: flex;
+  flex-wrap: wrap; /* Allow flex items to wrap to new lines */
+  justify-content: space-evenly; /* Spread flex items evenly */
+  gap: 2rem; /* Set the gap between flex items */
+}
+
+.contact__card {
+  flex-basis: 30%; /* Set the initial flex basis to 30% */
+  max-width: 300px; /* Set a maximum width for the contact card */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.card__circ__div {
+  width: 10rem;
+  height: 10rem;
+  background-color: rgb(254, 255, 254);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.card__circ__div:hover {
+  animation: pulse 1.5s;
+  background-color: rgb(116, 197, 218);
+  box-shadow: 0 0 0 20px rgba(115, 213, 237, 0);
+}
+
+.icon {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 100%;
+  border: 4px solid rgb(245, 246, 246);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon:hover {
+  border: 1px solid rgb(245, 246, 246);
+}
+
+.icon i {
+  font-size: 3rem;
+  /* color: rgb(117,197,219); */
+}
+
+.icon i:hover {
+  color: rgb(254, 255, 254);
+}
+
+.contact__card h1 {
+  padding: 12px 0;
+  font-size: 1.3rem;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+.contact__card p {
+  color: rgb(64, 155, 212);
+  padding-bottom: 10px;
+  font-size: 1rem;
+  line-height: 30px;
+}
+
+/* Adjust styles for smaller screens */
+@media screen and (max-width: 768px) {
+  .contact__card {
+      flex-basis: 90%; /* Set the flex basis to 90% for single column layout */
+  }
+}
